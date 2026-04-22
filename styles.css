@@ -204,7 +204,7 @@ h3 {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.85fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.7fr);
   gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
 }
@@ -296,6 +296,9 @@ h3 {
 
 .hero-visual {
   position: relative;
+  width: 100%;
+  max-width: 29rem;
+  justify-self: center;
   animation: rise-in 700ms ease 80ms both;
 }
 
@@ -315,9 +318,17 @@ h3 {
   box-shadow: var(--shadow);
 }
 
+.portrait-frame {
+  width: min(100%, 29rem);
+  margin-inline: auto;
+}
+
 .portrait-frame img,
 .photo-panel img {
-  width: 100%;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin-inline: auto;
   border-radius: var(--radius-lg);
   object-fit: contain;
   object-position: center top;
@@ -326,7 +337,8 @@ h3 {
 
 .portrait-frame img {
   aspect-ratio: auto;
-  max-height: 46rem;
+  height: auto;
+  max-height: min(72vh, 34rem);
 }
 
 .photo-panel img {
@@ -561,6 +573,19 @@ h3 {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-visual {
+    max-width: 34rem;
+  }
+
+  .portrait-frame {
+    width: min(100%, 34rem);
+  }
+
+  .portrait-frame img {
+    width: 100%;
+    max-height: none;
   }
 }
 
