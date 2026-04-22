@@ -199,7 +199,7 @@ h3 {
 }
 
 .hero {
-  padding: clamp(4rem, 8vw, 7rem) 0 3rem;
+  padding: clamp(4rem, 8vw, 7rem) 0 4.5rem;
 }
 
 .hero-grid {
@@ -319,15 +319,19 @@ h3 {
 .photo-panel img {
   width: 100%;
   border-radius: var(--radius-lg);
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center top;
+  background: #fff;
 }
 
 .portrait-frame img {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: auto;
+  max-height: 46rem;
 }
 
 .photo-panel img {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: auto;
+  max-height: 46rem;
 }
 
 .hero-note,
