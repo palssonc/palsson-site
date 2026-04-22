@@ -267,24 +267,6 @@ h3 {
   background: rgba(255, 255, 255, 0.68);
 }
 
-.signal-list {
-  display: grid;
-  gap: 0.8rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.signal-list li {
-  display: grid;
-  gap: 0.15rem;
-  padding: 1rem 1.1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.48);
-}
-
-.signal-list span,
 .research-item__meta,
 .callout__eyebrow {
   font-size: 0.83rem;
@@ -326,27 +308,25 @@ h3 {
 .portrait-frame img,
 .photo-panel img {
   display: block;
-  width: auto;
-  max-width: 100%;
-  margin-inline: auto;
+  width: 100%;
+  height: auto;
   border-radius: var(--radius-lg);
-  object-fit: contain;
   object-position: center top;
   background: #fff;
 }
 
 .portrait-frame img {
   aspect-ratio: auto;
-  height: auto;
   max-height: min(72vh, 34rem);
+  object-fit: contain;
 }
 
 .photo-panel img {
   aspect-ratio: auto;
-  max-height: 46rem;
+  max-height: none;
+  object-fit: cover;
 }
 
-.hero-note,
 .callout {
   margin-top: 1.2rem;
   padding: 1.2rem 1.25rem;
@@ -354,15 +334,6 @@ h3 {
   border-radius: var(--radius-md);
   background: rgba(255, 252, 246, 0.78);
   box-shadow: var(--shadow);
-}
-
-.hero-note__label {
-  margin-bottom: 0.4rem;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent-deep);
 }
 
 .section {
