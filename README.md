@@ -6,7 +6,8 @@ This project is a plain static rebuild of the original Gatsby and Netlify-based 
 
 - `index.html` is the homepage
 - `research/index.html` is the research page
-- `me/index.html` is the personal page
+- `garage-door/index.html` is the informal personal hub
+- `me/index.html` redirects to the Garage Door page for old links
 - `styles.css` contains the shared design system
 - `site.js` provides mobile navigation and active-link behavior
 - `assets/` contains the preserved images and CV PDF

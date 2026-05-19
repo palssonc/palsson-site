@@ -458,6 +458,16 @@ h3 {
     linear-gradient(180deg, rgba(250, 250, 250, 0.36), rgba(250, 250, 250, 0));
 }
 
+.page-hero--garage {
+  background:
+    radial-gradient(circle at 80% 18%, rgba(177, 77, 46, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(250, 250, 250, 0.36), rgba(250, 250, 250, 0));
+}
+
+.card-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .research-list {
   display: grid;
   gap: 1rem;
@@ -549,6 +559,7 @@ h3 {
   .split-grid,
   .split-grid--wide,
   .card-grid,
+  .card-grid--two,
   .card-grid--three {
     grid-template-columns: 1fr;
   }
