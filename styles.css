@@ -111,24 +111,24 @@ h3 {
   align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
-  min-height: 4.8rem;
+  min-height: 3.5rem;
 }
 
 .site-mark {
   display: inline-flex;
   flex-direction: column;
-  gap: 0.1rem;
 }
 
 .site-mark__eyebrow {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.14em;
   color: var(--primary-blue);
 }
 
 .site-mark__title {
+  display: none;
   font-size: 0.98rem;
   color: var(--secondary-blue);
 }
@@ -142,10 +142,10 @@ h3 {
 }
 
 .site-nav a {
-  padding: 0.7rem 0.9rem;
+  padding: 0.45rem 0.7rem;
   border-radius: 999px;
   color: var(--primary-blue);
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 700;
   transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
@@ -466,6 +466,51 @@ h3 {
 
 .card-grid--two {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.section--garage-door {
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.garage-story {
+  max-width: 54rem;
+  margin-inline: auto;
+}
+
+.garage-story h1 {
+  max-width: 46rem;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.garage-story p {
+  font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+}
+
+.garage-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 1rem 0 1.6rem;
+}
+
+.story-photo {
+  margin: 1.6rem 0 2rem;
+  padding: 0;
+}
+
+.story-photo img {
+  width: 100%;
+  height: auto;
+  max-height: 46rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(210, 207, 201, 0.75);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  object-position: center;
+}
+
+.story-photo--wide img {
+  max-height: none;
 }
 
 .research-list {
